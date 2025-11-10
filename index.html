@@ -14,7 +14,7 @@
     <form>
         <p>
             Name:<br>
-            <input type="name" name="name" placeholder="your full name" required>
+            <input type="name" name="name" placeholder="Your full name" required>
         </p>
         <p>
             Email:<br>
@@ -31,7 +31,12 @@
             <input type="password" name="confirm_password" placeholder="Confirm password" required>
         </p>
 
-        <p>Since when have you been using our products?</p>
+        <label>Gender:</label><br>
+        <input type="radio" name="Gender" value="Male"> Male
+        <input type="radio" name="Gender" value="Female"> Female
+        <br><br>
+
+        <p>Since when have you been using our Products?</p>
         <input type="radio" name="source" value="4 Years" checked> 4 Years <br>
         <input type="radio" name="source" value="3 Years"> 3 Years <br>
         <input type="radio" name="source" value="2 Years"> 2 Years <br>
@@ -40,7 +45,49 @@
         <p>What is Your Expectations from Our Upcoming Lawn Volume?</p>
         <textarea name="review" rows="4" cols="40" placeholder="Write here..."></textarea><br><br>
 
-        <input type="submit" value="Submit">
+        <p>Please select your favorite volume:
+            <br />
+            <input type="checkbox" name="service" value="Lily" checked="checked" /> Lily
+            <input type="checkbox" name="service" value="Muzlin" /> Muzlin
+            <input type="checkbox" name="service" value="Daisy" /> Daisy
+        </p>
+        <p>How satisfied are you with our fabric quality?</p>
+
+        <select name="Quality">
+            <option value="Very Satisfied">Very Satisfied</option>
+            <option value="Satisfied">Satisfied</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Needs Improvement">Needs Improvement</option>
+        </select>
+
+        <p>How do you find our clothing designs? </p>
+
+        <select name="volume" multiple="multiple">
+            <option value="Very Stylish" selected="selected"> Very Stylish</option>
+            <option value="Comfy">Comfy</option>
+            <option value="Average" selected="selected">Average</option>
+            <option value="Needs Improvement">Needs Improvement</option>
+        </select>
+
+        <p>Share your favorite collection here. </p>
+        <input type="file" name="picture" accept=".jpg, .png, WEBP" /> <br />
+
+
+        <input type="submit" value="Upload" />
+
+
+
+
+    </form>
+    Thank you for choosing us.
+
+
+
+
+
+
+
+    <input type="submit" value="Submit">
     </form>
 
 </body>
